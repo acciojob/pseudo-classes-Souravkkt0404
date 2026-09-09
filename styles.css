@@ -1,1 +1,42 @@
 /*  your css code here. If applicable */
+ :root {
+      background-color: rgb(135, 206, 235);
+    }
+
+    /* Article Paragraphs Styling */
+    article p:first-child {
+      color: white;
+      background-color: black;
+    }
+
+    article p:nth-child(2) {
+      /* Standard text color */
+      color: initial;
+    }
+
+    article p:last-child {
+      color: red;
+    }
+
+    /* Unordered List Styling */
+    ul li {
+      width: 50%;
+      padding: 10px;
+      background-color: gray; /* Default background for all list items */
+    }
+
+    /* Every odd item having a white background */
+    ul li:nth-child(odd) {
+      background-color: white;
+    }
+
+    /* Third-to-last item: Pink background color */
+    ul li:nth-last-child(3) {
+      background-color: pink;
+    }
+
+    /* First and last items: Font size of 22px */
+    ul li:first-child,
+    ul li:last-child {
+      font-size: 22px;
+    }
